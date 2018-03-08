@@ -1,0 +1,49 @@
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 420px) {
+	.picture {
+		display: none;
+	}
+    .resume {
+        width: 100%;
+    }
+    .sidebar {
+		width:100%;
+	}
+    .main {
+		padding: 5%;
+	}
+}
+@media screen and (min-width: 421px) and (max-width: 900px) {
+	.picture {
+		width:35%;		
+	}
+	.resume {
+		width:65%;
+	}
+	.main {
+		padding-right: 5%;
+	}
+	.sidebar {
+		width:100%;
+	}
+	
+}
+@media screen and (min-width: 901px) {
+	.picture {
+		width:40%;		
+	}
+	.resume {
+		width:60%;
+	}
+	.main {
+		width:80%;
+		padding-right: 5%;
+	}
+	.sidebar {
+		width:20%;
+	}
+}
